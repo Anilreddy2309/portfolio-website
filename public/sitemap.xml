@@ -6,43 +6,8 @@
   
   <url>
     <loc>https://anilbalireddy.com/</loc>
-    <lastmod>2024-11-01</lastmod>
+    <lastmod>2024-11-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
-  </url>
-  
-  <url>
-    <loc>https://anilbalireddy.com/#about</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://anilbalireddy.com/#experience</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://anilbalireddy.com/#skills</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://anilbalireddy.com/#projects</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  
-  <url>
-    <loc>https://anilbalireddy.com/#contact</loc>
-    <lastmod>2024-11-01</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
   </url>
 </urlset>
