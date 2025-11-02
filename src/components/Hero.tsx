@@ -53,7 +53,7 @@ const Hero: React.FC = () => {
           <p className="text-xl md:text-2xl text-text-dark mb-8 leading-relaxed">
             I'm a <span className="text-primary font-semibold">Full Stack Java Developer</span> based in{' '}
             <span className="text-primary font-semibold">San Jose, CA</span> with{' '}
-            <span className="text-primary font-semibold">5+ years</span> of experience building scalable enterprise applications.
+            <span className="text-primary font-semibold">4+ years</span> of experience building scalable enterprise applications.
           </p>
           
           <p className="text-lg md:text-xl text-text-dark mb-12 leading-relaxed">
@@ -108,7 +108,7 @@ const Hero: React.FC = () => {
           <motion.a
             whileHover={{ scale: 1.2, rotate: 5 }}
             whileTap={{ scale: 0.9 }}
-            href="https://github.com/anilbalireddy"
+            href="https://github.com/Anilreddy2309"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light hover:text-primary transition-colors duration-300"
@@ -119,7 +119,7 @@ const Hero: React.FC = () => {
           <motion.a
             whileHover={{ scale: 1.2, rotate: -5 }}
             whileTap={{ scale: 0.9 }}
-            href="https://linkedin.com/in/anilbalireddy"
+            href="https://www.linkedin.com/in/anil-balireddy-5b8381146/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-text-light hover:text-primary transition-colors duration-300"

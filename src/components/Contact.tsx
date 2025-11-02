@@ -23,12 +23,32 @@ const Contact: React.FC = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Simulate form submission (replace with actual form handling)
+    // Using Formspree free service (https://formspree.io)
+    // Replace 'YOUR_FORM_ID' with your actual Formspree form ID after signing up
+    const formspreeEndpoint = process.env.REACT_APP_FORMSPREE_ID || 'YOUR_FORM_ID';
+    
     try {
-      await new Promise(resolve => setTimeout(resolve, 2000));
-      setSubmitStatus('success');
-      setFormData({ name: '', email: '', message: '' });
+      const response = await fetch(`https://formspree.io/f/${formspreeEndpoint}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+          _subject: `Portfolio Contact: Message from ${formData.name}`,
+        }),
+      });
+
+      if (response.ok) {
+        setSubmitStatus('success');
+        setFormData({ name: '', email: '', message: '' });
+      } else {
+        throw new Error('Form submission failed');
+      }
     } catch (error) {
+      console.error('Error submitting form:', error);
       setSubmitStatus('error');
     } finally {
       setIsSubmitting(false);
@@ -60,19 +80,19 @@ const Contact: React.FC = () => {
     {
       icon: <Github size={24} />,
       label: 'GitHub',
-      href: 'https://github.com/anilbalireddy',
+      href: 'https://github.com/Anilreddy2309',
       color: 'hover:text-gray-400'
     },
     {
       icon: <Linkedin size={24} />,
       label: 'LinkedIn',
-      href: 'https://linkedin.com/in/anilbalireddy',
+      href: 'https://www.linkedin.com/in/anil-balireddy-5b8381146/',
       color: 'hover:text-blue-400'
     },
     {
       icon: <MessageCircle size={24} />,
       label: 'Discord',
-      href: '#',
+      href: 'https://discord.gg/sUGmtfhW',
       color: 'hover:text-purple-400'
     }
   ];

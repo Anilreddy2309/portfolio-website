@@ -10,12 +10,12 @@ const Footer: React.FC = () => {
   const socialLinks = [
     {
       icon: <Github size={20} />,
-      href: 'https://github.com/anilbalireddy',
+      href: 'https://github.com/Anilreddy2309',
       label: 'GitHub'
     },
     {
       icon: <Linkedin size={20} />,
-      href: 'https://linkedin.com/in/anilbalireddy',
+      href: 'https://www.linkedin.com/in/anil-balireddy-5b8381146/',
       label: 'LinkedIn'
     },
     {

@@ -16,7 +16,7 @@ const Projects: React.FC = () => {
       technologies: ['Java', 'Python', 'React', 'AWS', 'Microservices', 'MySQL'],
       image: '/projects/travel-platform.jpg',
       github: 'https://github.com/anilbalireddy/travel-platform',
-      live: 'https://oneair.ai',
+      live: 'https://www.oneair.ai/',
       featured: true
     },
     {
@@ -252,7 +252,7 @@ const Projects: React.FC = () => {
           <motion.a
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
-            href="https://github.com/anilbalireddy"
+            href="https://github.com/Anilreddy2309"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-2 btn-secondary"

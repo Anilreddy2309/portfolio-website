@@ -6,6 +6,7 @@ const Experience: React.FC = () => {
   const experiences = [
     {
       company: 'OneAir.ai',
+      companyUrl: 'https://www.oneair.ai/',
       position: 'Software Engineer',
       location: 'San Jose, CA',
       duration: 'July 2024 - Present',
@@ -21,6 +22,7 @@ const Experience: React.FC = () => {
     },
     {
       company: 'Jio Platforms Limited',
+      companyUrl: 'https://www.jio.com/platforms/',
       position: 'Software Developer',
       location: 'Bangalore, India',
       duration: 'Sep 2020 - Dec 2022',
@@ -95,7 +97,20 @@ const Experience: React.FC = () => {
                       <ExternalLink className="text-primary" size={24} />
                     </div>
                     <div>
-                      <h3 className="text-2xl font-bold text-text-light">{exp.company}</h3>
+                      <h3 className="text-2xl font-bold text-text-light">
+                        {exp.companyUrl ? (
+                          <a 
+                            href={exp.companyUrl} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="hover:text-primary transition-colors duration-300"
+                          >
+                            {exp.company}
+                          </a>
+                        ) : (
+                          exp.company
+                        )}
+                      </h3>
                       <p className="text-primary font-semibold">{exp.position}</p>
                     </div>
                   </div>

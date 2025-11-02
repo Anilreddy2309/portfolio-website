@@ -75,7 +75,7 @@ const About: React.FC = () => {
             <motion.div variants={itemVariants}>
               <p className="text-lg text-text-dark leading-relaxed mb-6">
                 I'm a <span className="text-primary font-semibold">Full Stack Java Developer</span> with over{' '}
-                <span className="text-primary font-semibold">5 years</span> of experience designing and developing 
+                <span className="text-primary font-semibold">4+ years</span> of experience designing and developing 
                 enterprise-level applications. I specialize in building robust, scalable solutions using{' '}
                 <span className="text-primary font-semibold">Java</span>,{' '}
                 <span className="text-primary font-semibold">Spring Boot</span>,{' '}
